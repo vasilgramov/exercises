@@ -1,4 +1,4 @@
-package hackerRank.contest_101Hack43;
+package hackerRank.contests.contest_101Hack43;
 
 import java.util.Arrays;
 import java.util.Scanner;

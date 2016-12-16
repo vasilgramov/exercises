@@ -1,4 +1,4 @@
-package hackerRank.contest_weekOfCode26;// https://www.hackerrank.com/contests/w26/challenges/game-with-cells
+package hackerRank.contests.contest_weekOfCode26;// https://www.hackerrank.com/contests/w26/challenges/game-with-cells
 
 import java.util.Scanner;
 

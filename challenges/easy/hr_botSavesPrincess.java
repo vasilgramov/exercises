@@ -1,4 +1,4 @@
-package hackerRank.justProblems.easy;// https://www.hackerrank.com/challenges/saveprincess
+package hackerRank.challenges.easy;// https://www.hackerrank.com/challenges/saveprincess
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package hackerRank.contest_weekOfCode26;// https://www.hackerrank.com/contests/w26/challenges/twins
+package hackerRank.contests.contest_weekOfCode26;// https://www.hackerrank.com/contests/w26/challenges/twins
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package hackerRank.justProblems.medium;
+package hackerRank.challenges.medium;
 
 import java.util.ArrayList;
 import java.util.Scanner;

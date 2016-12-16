@@ -1,8 +1,7 @@
 // https://www.hackerrank.com/challenges/taum-and-bday?utm_campaign=challenge-recommendation&utm_medium=email&utm_source=24-hour-campaign
 
-package hackerRank.justProblems.easy;
+package hackerRank.challenges.easy;
 
-import java.math.BigInteger;
 import java.util.Scanner;
 
 public class hr_taumAndBday {
