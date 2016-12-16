@@ -1,4 +1,4 @@
-package hackerRank.justProblems;// https://www.hackerrank.com/challenges/caesar-cipher-1?utm_campaign=challenge-recommendation&utm_medium=email&utm_source=24-hour-campaign
+package hackerRank.justProblems.easy;// https://www.hackerrank.com/challenges/caesar-cipher-1?utm_campaign=challenge-recommendation&utm_medium=email&utm_source=24-hour-campaign
 
 import java.util.Scanner;
 

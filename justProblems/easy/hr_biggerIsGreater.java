@@ -1,4 +1,4 @@
-package hackerRank.justProblems;// https://www.hackerrank.com/challenges/bigger-is-greater
+package hackerRank.justProblems.easy;// https://www.hackerrank.com/challenges/bigger-is-greater
 
 import java.util.Arrays;
 import java.util.Scanner;
