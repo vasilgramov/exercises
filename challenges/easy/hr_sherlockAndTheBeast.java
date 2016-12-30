@@ -1,3 +1,4 @@
+// https://www.hackerrank.com/challenges/sherlock-and-the-beast
 package hackerRank.challenges.easy;
 
 import java.util.Scanner;

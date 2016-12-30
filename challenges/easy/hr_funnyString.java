@@ -1,3 +1,4 @@
+// https://www.hackerrank.com/challenges/funny-string
 package hackerRank.challenges.easy;
 
 import java.util.Scanner;

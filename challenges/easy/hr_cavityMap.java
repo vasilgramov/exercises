@@ -1,4 +1,5 @@
-package hackerRank.challenges.easy;// https://www.hackerrank.com/challenges/cavity-map
+// https://www.hackerrank.com/challenges/cavity-map
+package hackerRank.challenges.easy;
 
 import java.util.Scanner;
 

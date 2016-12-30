@@ -1,4 +1,5 @@
-package hackerRank.challenges.easy;// https://www.hackerrank.com/challenges/the-grid-search?utm_campaign=challenge-recommendation&utm_medium=email&utm_source=24-hour-campaign
+// https://www.hackerrank.com/challenges/the-grid-search?utm_campaign=challenge-recommendation&utm_medium=email&utm_source=24-hour-campaign
+package hackerRank.challenges.easy;
 
 import java.util.Scanner;
 
