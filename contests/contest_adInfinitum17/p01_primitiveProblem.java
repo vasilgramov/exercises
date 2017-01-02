@@ -67,7 +67,7 @@ public class p01_primitiveProblem {
 
         long copy = p;
         int n = 2;
-        while (copy > 1) {
+        while (copy > 0) {
             if (copy % n == 0) {
                 primeFactors.add(n);
                 copy /= n;
