@@ -1,7 +1,6 @@
 // https://www.hackerrank.com/challenges/tutorial-intro?utm_campaign=challenge-recommendation&utm_medium=email&utm_source=24-hour-campaign
 package hackerRank.challenges.easy;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class hr_binarySearchInArray {
