@@ -1,5 +1,5 @@
 // https://www.hackerrank.com/challenges/bigger-is-greater
-package hackerRank.challenges.easy;
+package hackerRank.challenges;
 
 import java.util.Arrays;
 import java.util.Scanner;

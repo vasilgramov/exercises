@@ -1,5 +1,5 @@
 // https://www.hackerrank.com/challenges/encryption
-package hackerRank.challenges.medium;
+package hackerRank.challenges;
 
 import java.util.ArrayList;
 import java.util.Scanner;

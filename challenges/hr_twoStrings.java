@@ -1,5 +1,5 @@
 // https://www.hackerrank.com/challenges/two-strings?utm_campaign=challenge-recommendation&utm_medium=email&utm_source=3-day-campaign
-package hackerRank.challenges.easy;
+package hackerRank.challenges;
 
 import java.util.*;
 
