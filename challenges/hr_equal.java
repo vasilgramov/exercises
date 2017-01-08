@@ -1,3 +1,4 @@
+// https://www.hackerrank.com/challenges/equal
 package hackerRank.challenges;
 
 import java.util.Arrays;
