@@ -18,7 +18,7 @@ public class hr_anagram {
                 String secondPart = currentInput.substring(mid);
 
                 StringBuilder s2 = new StringBuilder(secondPart);
-                
+
                 for (int j = 0; j < firstPart.length(); j++) {
                     if (s2.toString().contains(Character.toString(firstPart.charAt(j)))) {
                         s2.deleteCharAt(s2.indexOf(Character.toString(firstPart.charAt(j))));
