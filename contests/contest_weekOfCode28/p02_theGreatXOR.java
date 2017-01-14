@@ -15,7 +15,7 @@ public class p02_theGreatXOR {
             for (int j = 0; j < currentNumberAsBinary.length(); j++) {
                 if (currentNumberAsBinary.charAt(j) == '0') {
                     long startNumber = Long.parseLong(1 + newString(currentNumberAsBinary.length() - 1 - j, "1"), 2);
-                    long endNumber = Long.parseLong("1" + newString(currentNumberAsBinary.length() - 1 - j, "0"), 2);
+                    long endNumber = (long)Math.pow(2, currentNumberAsBinary.length() - j - 1);
 
                     counter += startNumber - endNumber + 1;
                 }
