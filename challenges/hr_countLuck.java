@@ -78,7 +78,7 @@ public class hr_countLuck {
 
         }
     }
-    
+
     private static void dfs(char[][] matrix, int currentRow, int currentCol, char direction) {
         if (hasReachedThePortal) {
             return;
