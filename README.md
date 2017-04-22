@@ -1,1 +1,1 @@
-# hackerRank-java
+# exercises
