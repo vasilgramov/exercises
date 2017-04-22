@@ -20,8 +20,8 @@ public class hr_redJohnIsBack {
                 }
             }
 
-            System.out.println(combinations);
-//            System.out.println(primesCount);
+//            System.out.println(combinations);
+            System.out.println(primesCount);
         }
     }
 
