@@ -12,20 +12,16 @@ public class hr_thePowerSum {
         int total = scan.nextInt();
         int power = scan.nextInt();
 
-        int result = powerSum(total, power, 1, 0);
+        int result = count(total, power, 1);
         System.out.println(result);
     }
 
-    private static int powerSum(int total, int power, int base, int sum) {
-        int cur = (int) Math.pow(base, power);
+    private static int count(int total, int power, int currentNumber) {
+        int value = total - (int)Math.pow(currentNumber, power);
 
-        if ((sum + cur) == total) {
-            return 1;
-        } else if (sum > total || cur > total) {
-            return 0;
-        } else {
-            return powerSum(total, power, base + 1, (sum + cur)) +
-                    powerSum(total, power, base + 1, sum);
-        }
+        if (value < 0) return  0;
+        else if (value == 0) return 1;
+        else return count(value, power, currentNumber + 1) +
+                    count(total, power, currentNumber + 1);
     }
 }
