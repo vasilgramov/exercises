@@ -28,7 +28,7 @@ public class hr_recursiveDigitSum {
 
         System.out.println(getSuperDigit(builder.toString()));
     }
-    
+
     // recursive
     private static int getSuperDigit(String num) {
         if (num.length() == 1) {
