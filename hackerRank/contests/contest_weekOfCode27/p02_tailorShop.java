@@ -1,44 +1,43 @@
 package hackerRank.contests.contest_weekOfCode27;
 
-import java.util.HashSet;
-import java.util.Scanner;
-import java.util.Set;
-import java.util.TreeSet;
+import java.util.*;
 
-/**
- * Created by vladix on 5/13/17.
- */
 public class p02_tailorShop {
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
 
         int n = in.nextInt();
-        int priceForOne = in.nextInt();
+        int p = in.nextInt();
 
-        TreeSet<Integer> used = new TreeSet<>();
-
-        for (int i = 0; i < n; i++) {
-            int desired = in.nextInt();
-
-            int price = (desired / priceForOne) + 1;
-            if (!used.contains(price)) {
-                used.add(price);
-            } else {
-                Integer ceiling = used.ceiling(price);
-                if (ceiling == null) {
-                    used.add(price + 1);
-                } else {
-                    while (ceiling != null && ceiling - 1 <= price) {
-                        price = ceiling;
-                        ceiling = used.ceiling(ceiling + 1);
-                    }
-                    
-                    used.add(price);
-                }
-            }
+        TreeSet<Integer> not_used = new TreeSet<>();
+        for (int i = 1; i < 1000000; i++) {
+            not_used.add(i);
         }
 
+        Deque<Integer> taken = new ArrayDeque<>();
 
+        for (int i = 0; i < n; i++) {
+            int min_price = in.nextInt();
+
+            int needed = 0;
+            if (min_price % p == 0) {
+                needed = min_price / p;
+            } else {
+                needed = min_price / p + 1;
+            }
+
+            Integer currentTaken = not_used.ceiling(needed);
+            not_used.remove(currentTaken);
+
+            taken.add(currentTaken);
+        }
+
+        long sum = 0;
+        for (Integer num : taken) {
+            sum += num;
+        }
+
+        System.out.println(sum);
     }
 }
