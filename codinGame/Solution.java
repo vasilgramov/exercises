@@ -1,28 +1,45 @@
 package codinGame;
 
-import java.math.BigInteger;
-import java.util.Scanner;
+import java.util.*;
+import java.io.*;
+import java.math.*;
 
 /**
- * Created by vladix on 5/4/17.
- */
-
-public class Solution {
+ * Auto-generated code below aims at helping you parse
+ * the standard input according to the problem statement.
+ **/
+class Solution {
 
     public static void main(String args[]) {
         Scanner in = new Scanner(System.in);
-        int N = in.nextInt();
-        int[] nums = new int[N];
-        for (int i = 0; i < N; i++) {
-            int E = in.nextInt();
-            nums[i] = E;
+        String E = in.nextLine();
+
+        int result = Integer.parseInt(E.substring(E.indexOf('=') + 1));
+
+
+        int rightPart = Integer.parseInt(E.substring(E.contains("+") ? E.indexOf("+") : E.indexOf("-"), E.indexOf("=")));
+//        System.out.println(rightPart);
+        String leftPart = E.substring(0, E.contains("+") ? E.indexOf("+") : E.indexOf("-"));
+
+        int leftPartNumber = 1;
+        try {
+            leftPartNumber = Integer.parseInt(leftPart.replace("N", ""));
+        } catch (NumberFormatException e) {
+
         }
 
-        StringBuilder builder = new StringBuilder();
-        for (int i = 0; i < nums.length; i++) {
-            if (nums[i] == -1) builder.append(" ");
-            else builder.append((char)(122 - nums[i]));
+
+//        System.out.println(leftPartNumber);
+
+//        System.out.println(result - rightPart);
+        double n = (result - rightPart) / (leftPartNumber + 0.0);
+
+        if (n != (int)n) {
+            System.out.println((int)(n + 1));
+        } else {
+            System.out.println((int)n);
         }
-        System.out.println(builder);
+
+//        System.out.println("SOLUTION");
     }
 }
