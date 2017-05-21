@@ -12,34 +12,23 @@ class Solution {
 
     public static void main(String args[]) {
         Scanner in = new Scanner(System.in);
-        String E = in.nextLine();
+        String DNA = in.next();
 
-        int result = Integer.parseInt(E.substring(E.indexOf('=') + 1));
+        // Write an action using System.out.println()
+        // To debug: System.err.println("Debug messages...");
+
+        Map<Character, Character> characterCharacterMap = new HashMap<>();
+        characterCharacterMap.put('A', 'T');
+        characterCharacterMap.put('T', 'A');
+        characterCharacterMap.put('C', 'G');
+        characterCharacterMap.put('G', 'C');
 
 
-        int rightPart = Integer.parseInt(E.substring(E.contains("+") ? E.indexOf("+") : E.indexOf("-"), E.indexOf("=")));
-//        System.out.println(rightPart);
-        String leftPart = E.substring(0, E.contains("+") ? E.indexOf("+") : E.indexOf("-"));
-
-        int leftPartNumber = 1;
-        try {
-            leftPartNumber = Integer.parseInt(leftPart.replace("N", ""));
-        } catch (NumberFormatException e) {
-
+        StringBuilder result = new StringBuilder();
+        for (int i = 0; i < DNA.length(); i++) {
+            result.append(characterCharacterMap.get(DNA.charAt(i)));
         }
 
-
-//        System.out.println(leftPartNumber);
-
-//        System.out.println(result - rightPart);
-        double n = (result - rightPart) / (leftPartNumber + 0.0);
-
-        if (n != (int)n) {
-            System.out.println((int)(n + 1));
-        } else {
-            System.out.println((int)n);
-        }
-
-//        System.out.println("SOLUTION");
+        System.out.println(result);
     }
 }
