@@ -21,10 +21,13 @@ public class hr_radioTransmitters {
         Arrays.sort(x);
         int numOfTransmitters = 0;
         int i = 0;
+
+        /*
+            Greedy approach
+            -- go to right (until we can reach next house) - this will be our mid point
+            -- go to right / (end until we can reach next house)
+         */
         while (i < n) {
-            /* Key is to use greedy algorithm to always place the transmitter at the house furthest to the right possible
-             * to cover the range.
-             */
 
             numOfTransmitters++;
             int loc = x[i] + k;
