@@ -20,24 +20,29 @@ public class hr_cuttingBoards {
             long horizontalMultiplier = 1;
 
             Line[] lines = getLines(in, m, n);
-
-            Arrays.sort(lines);
-
-            long cost = 0L;
-            for (int i = lines.length - 1; i >= 0; i--) {
-                Line line = lines[i];
-                if (line.horizontalOrVertical.equals("horizontal")) {
-                    cost += line.value * verticalMultiplier;
-                    horizontalMultiplier++;
-                } else {
-                    cost += line.value * horizontalMultiplier;
-                    verticalMultiplier++;
-                }
-            }
+            long cost = getCost(verticalMultiplier, horizontalMultiplier, lines);
 
             cost = cost % (long) (Math.pow(10, 9) + 7);
             System.out.println(cost);
         }
+    }
+
+    private static long getCost(long verticalMultiplier, long horizontalMultiplier, Line[] lines) {
+        Arrays.sort(lines);
+        long cost = 0L;
+
+        for (int i = lines.length - 1; i >= 0; i--) {
+            Line line = lines[i];
+            if (line.horizontalOrVertical.equals("horizontal")) {
+                cost += line.value * verticalMultiplier;
+                horizontalMultiplier++;
+            } else {
+                cost += line.value * horizontalMultiplier;
+                verticalMultiplier++;
+            }
+        }
+
+        return cost;
     }
 
     private static Line[] getLines(Scanner in, int m, int n) {
@@ -65,8 +70,8 @@ public class hr_cuttingBoards {
         }
 
         @Override
-        public int compareTo(Line o) {
-            return Integer.compare(this.value, o.value);
+        public int compareTo(Line other) {
+            return Integer.compare(this.value, other.value);
         }
     }
 }
