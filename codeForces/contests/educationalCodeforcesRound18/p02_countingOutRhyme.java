@@ -1,4 +1,4 @@
-package codeForces.contests.ducationalCodeforcesRound18;
+package codeForces.contests.educationalCodeforcesRound18;
 
 import java.io.BufferedReader;
 import java.io.IOException;
