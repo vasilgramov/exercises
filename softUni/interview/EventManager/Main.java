@@ -1,13 +1,14 @@
 package softUni.interview.EventManager;
 
-import EventManager.app.*;
-import EventManager.app.Engine;
-import EventManager.io.ConsoleReader;
-import EventManager.io.ConsoleWriter;
-import EventManager.io.Reader;
-import EventManager.io.Writer;
+import softUni.interview.EventManager.app.CommandManger;
+import softUni.interview.EventManager.app.Engine;
+import softUni.interview.EventManager.io.ConsoleReader;
+import softUni.interview.EventManager.io.ConsoleWriter;
+import softUni.interview.EventManager.io.Reader;
+import softUni.interview.EventManager.io.Writer;
 
 import java.io.IOException;
+
 import java.text.ParseException;
 
 

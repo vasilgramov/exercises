@@ -1,8 +1,9 @@
 package softUni.interview.EventManager.app;
 
-import EventManager.Event;
-import EventManager.io.Reader;
-import EventManager.io.Writer;
+
+import softUni.interview.EventManager.Event;
+import softUni.interview.EventManager.io.Reader;
+import softUni.interview.EventManager.io.Writer;
 
 import java.io.*;
 import java.text.DateFormat;

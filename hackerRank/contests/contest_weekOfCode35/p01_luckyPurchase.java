@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class p03 {
+public class p01_luckyPurchase {
 
     public static void main(String[] args) {
 

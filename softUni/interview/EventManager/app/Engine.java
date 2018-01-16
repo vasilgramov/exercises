@@ -1,7 +1,7 @@
 package softUni.interview.EventManager.app;
 
-import EventManager.io.Reader;
-import EventManager.io.Writer;
+import softUni.interview.EventManager.io.Reader;
+import softUni.interview.EventManager.io.Writer;
 
 import java.io.IOException;
 import java.text.ParseException;
